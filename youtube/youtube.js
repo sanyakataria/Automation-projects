@@ -31,8 +31,13 @@ console.log(song);
         let links = await page.$$('.style-scope.ytd-item-section-renderer #dismissable');
         await links[0].click();
 
-        await waitForSelector('.ytp-ad-text.ytp-ad-skip-button-text');
-        page.click('.ytp-ad-text.ytp-ad-skip-button-text');
+        await page.keyboard.press("t");
+
+        await page.waitForSelector(".style-scope.ytd-button-renderer.style-text.size-default");
+        await page.click(".style-scope.ytd-button-renderer.style-text.size-default");
+
+        // await waitForSelector('.ytp-ad-text.ytp-ad-skip-button-text');
+        // page.click('.ytp-ad-text.ytp-ad-skip-button-text');
     }
     catch (err) {
         console.log(err);
