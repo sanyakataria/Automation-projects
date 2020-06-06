@@ -2,7 +2,7 @@ let puppeteer = require("puppeteer");
 let fs = require("fs");
 let url = "https://www.myntra.com/";
 let yt = "https://www.youtube.com/"
-let song = process.argv.splice(2);
+let song = process.argv[2];
 let min = process.argv[3];
 let max = process.argv[4];
 console.log(song);
