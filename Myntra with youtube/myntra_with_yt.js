@@ -3,6 +3,8 @@ let fs = require("fs");
 let url = "https://www.myntra.com/";
 let yt = "https://www.youtube.com/"
 let song = process.argv.splice(2);
+let min = process.argv[3];
+let max = process.argv[4];
 console.log(song);
 
 (async function () {
@@ -102,8 +104,6 @@ console.log(song);
         console.log(actualPrices.length)
         console.log(actualPrices);
 
-        let min = 1300;
-        let max = 1500;
         let budgetPrice = 0;
         let idx = -1;
         for (let i = 0; i < actualPrices.length; i++) {
