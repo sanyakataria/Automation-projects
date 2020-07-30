@@ -35,8 +35,8 @@ console.log(song);
 
         await page.keyboard.press("t");
 
-        await page.waitForSelector(".style-scope.ytd-button-renderer.style-text.size-default");
-        await page.click(".style-scope.ytd-button-renderer.style-text.size-default");
+        // await page.waitForSelector(".sty le-scope.ytd-button-renderer.style-text.size-default");
+        // await page.click(".style-scope.ytd-button-renderer.style-text.size-default");
 
         function delay(time) {
             return new Promise(function(resolve) { 
@@ -49,7 +49,7 @@ console.log(song);
         // await waitForSelector('.ytp-ad-text.ytp-ad-skip-button-text');
         // page.click('.ytp-ad-text.ytp-ad-skip-button-text');
         
-        await delay(40000);
+        await delay(30000);
         page = await browser.newPage();
 
         await page.goto(url, {

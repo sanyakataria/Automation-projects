@@ -1,1 +1,1 @@
-node myntra_with_yt.js "shopping"
+node myntra_with_yt.js "shopping" 1200 1400
