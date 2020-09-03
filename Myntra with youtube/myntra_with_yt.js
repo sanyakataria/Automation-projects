@@ -61,7 +61,7 @@ console.log(song);
         
         await Promise.all([page.waitForNavigation({
             waitUntil: "networkidle2"
-        }), page.click('a[href="/western-wear-dresses-menu"]')]);
+        }), page.click('a[href="/womens-western-wear"]')]);
 
         await page.waitForSelector('.categories-list .common-checkboxIndicator');
         let allCboxes = await page.$$('.categories-list .common-checkboxIndicator');
