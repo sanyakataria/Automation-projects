@@ -66,7 +66,7 @@ console.log(song);
         await page.waitForSelector('.categories-list .common-checkboxIndicator');
         let allCboxes = await page.$$('.categories-list .common-checkboxIndicator');
         console.log(allCboxes.length);
-        await allCboxes[0].click();
+        await allCboxes[1].click();
 
         await page.waitForSelector('.brand-list .common-checkboxIndicator');
         let allBboxes = await page.$$('.brand-list input');
@@ -76,7 +76,7 @@ console.log(song);
 
         await page.waitForSelector('.colour-listItem .common-checkboxIndicator');
         let allColboxes = await page.$$('.colour-listItem .common-checkboxIndicator');
-        await allColboxes[0].click();
+        await allColboxes[1].click();
 
         // page.evaluate(_ => {
         //     window.scrollBy(0, window.innerHeight);
